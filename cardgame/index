@@ -4,6 +4,16 @@
         <meta charset="utf-8">
         <meta name="robots" content="noindex, nofollow">
         <title>Card Games</title>
+        <style>
+            a {
+                color:blue;
+            }
+            h1 {
+                background-color:blue;
+                color:white;
+
+            }
+        </style>
     </head>
     </body>
         <div>
