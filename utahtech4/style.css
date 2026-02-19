@@ -1,3 +1,7 @@
+* { 
+    box-sizing: border-box; 
+}
+
 main {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -35,6 +39,7 @@ body {
     font-family: verdana, arial, sans-serif;
     background-image: linear-gradient(to bottom, #eeeeee, #ffffff);
     background-attachment: fixed;
+    margin: 0px;
 }
 
 header {
@@ -93,11 +98,7 @@ footer {
 }
 
 #wrapper {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #ffffff;
-    min-width: 960px;
-    max-width: 2048px;
-    box-shadow: 0px 3px 3px rgba(66, 66, 66, 0.3);
+    display: grid;
+    grid-auto-rows: minmax(0, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
