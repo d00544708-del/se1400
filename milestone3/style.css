@@ -1,0 +1,29 @@
+wrapper {
+    display: grid;
+    grid-auto-rows: minmax(0, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    gap: 20px;
+}
+header {
+    background: rgba(255,0,0,0.3);
+    min-height: 60px;
+    
+}
+nav {
+    background: rgba(0,255,0,0.3);
+    min-height: 120px;
+
+}
+#hero {
+    background: rgba(255,0,0,0.3);
+}
+main {
+    background: rgba(0,0,255,0.3);
+    min-height: 420px;
+}
+footer {
+    background: rgba(255,0,255,0.3);
+    grid-column: 2 / 8;
+    min-height: 100px;
+
+}
