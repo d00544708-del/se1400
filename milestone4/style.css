@@ -13,8 +13,11 @@ header {
 
     font-weight: bold;
     font-size: 50px;
-    
-    
+}
+
+header a {
+    color:black;
+    text-decoration: none;
 }
 nav {
     background: #a55b5b;
@@ -60,6 +63,13 @@ main {
     padding: 40px;
 }
 
+main a {
+
+    color: white;
+    text-decoration: none;
+    text-shadow: .5px .5px black;
+}
+
 #text {
     line-height: 1.6;
     font-size: 18px;
@@ -98,4 +108,9 @@ body {
     margin:0;
     font-family: Verdana, Arial, sans-serif;
     background: #e6e6e6;
+}
+
+h3 {
+    text-indent: 40px;
+    word-spacing: 10px;
 }
