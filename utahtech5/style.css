@@ -193,3 +193,10 @@ main img {
         padding-left: 0px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    header h1 {
+        background-image: none;
+        text-align: center;
+    }
+}
