@@ -193,6 +193,12 @@ td, th {
     padding: 5px;
     border: 1px solid #424242;
 }
+td {
+    text-align: center;
+}
+.text {
+    text-align: left;
+}
 
 @media only screen and (max-width: 1100px) {
     #wrapper {
