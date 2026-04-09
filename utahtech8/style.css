@@ -243,6 +243,11 @@ label {
     width: 10rem;
     grid-column: 2 / 3;
 }
+
+video {
+    float:right;
+    margin-left:2em;
+}
 @media only screen and (max-width: 600px) {
     header h1 {
         background-image: none;
