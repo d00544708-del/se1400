@@ -211,6 +211,12 @@ tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
 
+#shoppingcart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
 #shoppingcart img {
     width:100%;
     height:auto;
