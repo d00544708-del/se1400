@@ -40,7 +40,6 @@ nav a {
     background-image:url(images/hotel1.jpg);
     background-size: cover;
     background-position: center;
-
     height: 250px;
 
     display: flex;
@@ -56,7 +55,7 @@ nav a {
 main {
     grid-column: 2 / 8;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
 
     background: white;
