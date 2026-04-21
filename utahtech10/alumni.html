@@ -6,6 +6,15 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script> 
+function validateForm() {
+     if (document.forms[0].myEmail.value == "" ) {
+          alert("Please enter an e-mail address.");
+          return false;
+     } // end if
+     return true;
+} // end function validateForm
+</script>
 </head>
 <body>
   <div id="wrapper">
@@ -39,15 +48,15 @@
     <h2>Join Alumni Mailing List</h2>
     <h3>Request Alumni Newsletter</h3>
     <p>Required information is marked with an asterisk (*).</p>
-    <form method="post" action="https://wfc.flitchbeta.com/se1400/index.php">
-      <label for="myFName">* First Name:</label>
-      <input type="text" name="myFName" id="myFName" required>
+    <form method="post" action="https://wfc.flitchbeta.com/se1400/index.php" onsubmit="return validateForm();" action="https://kearl.net/se1400/mail.php">
+      <label for="myFName">First Name:</label>
+      <input type="text" name="myFName" id="myFName">
 
-      <label for="myLName">* Last Name:</label>
-      <input type="text" name="myLName" id="myLName" required>
+      <label for="myLName">Last Name:</label>
+      <input type="text" name="myLName" id="myLName">
 
       <label for="myEmail">* Email:</label>
-      <input type="email" name="myEmail" id="myEmail" required>
+      <input type="email" name="myEmail" id="myEmail">
 
       <label for="myPhone">Phone:</label>
       <input type="tel" name="myPhone" id="myPhone">
@@ -56,7 +65,7 @@
       <input type="date" name="myGraduation" id="myGraduation">
 
       <label for="myComments">* Comments</label>
-      <textarea name="myComments" cols="20" rows="2" id="myComments" required></textarea>
+      <textarea name="myComments" cols="20" rows="2" id="myComments"></textarea>
 
       <input type="submit" value="submit" id="mySubmit">
 
