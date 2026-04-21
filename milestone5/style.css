@@ -76,10 +76,12 @@ main a {
 
 #sidebar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
 }
-
+.card {
+    flex: 1;
+}
 .card img {
     width: 100%;
     display: block;
