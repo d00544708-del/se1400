@@ -116,16 +116,38 @@ h3 {
 }
 
 @media only screen and (max-width: 992px) {
-    header h1 {
-        font-size:20px;
-        padding:20px 0;
     }
     #wrapper {
-        grid-template-columns: minimax(0px, 1fr) repeat(6, minimax(0, 150px)) minmax(0px, 1fr);
+        grid-template-columns: minmax(0px, 1fr) repeat(6, 128px) minmax(0px, 1fr);
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap:wrap;
+        gap: 15px;
+    }
+    header {
+        font-size: 36px;
     }
 }
 @media screen and (max-width:768px) {
-    nav ul {
-        
+    #wrapper {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    header, nav, #hero, main, footer {
+        grid-column: 1 / -1;
+    }
+    main {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+        padding: 5px;
+    }
+    #hero h1 {
+        font-size: 32px;
     }
 }
